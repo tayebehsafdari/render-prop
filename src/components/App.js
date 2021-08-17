@@ -1,5 +1,4 @@
 import './App.scss';
-
 import {Container, Form} from 'react-bootstrap';
 import Counter from "./Counter";
 
@@ -8,7 +7,7 @@ function App() {
         <div className="App">
             <Container>
                 <Form>
-                    <Counter initialCount={0}/>
+                    <Counter render={initialCount => initialCount}/>
                 </Form>
             </Container>
         </div>
